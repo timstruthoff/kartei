@@ -1,0 +1,14 @@
+<svg width="16" height="16" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>sort</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(1602 240)" figma:type="canvas">
+<g id="sort" style="mix-blend-mode:normal;" figma:type="symbol">
+<g id="Vector 2" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(-1598 -233.668)" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" fill-rule="evenodd" d="M 7.0286 0.167808C 7.38707 -0.190666 8 0.0632212 8 0.570177C 8 0.721095 7.94005 0.865831 7.83333 0.972546L 4.2357 4.57018L 4 4.80588L 3.7643 4.57018L 0.166667 0.972545C 0.0599516 0.86583 0 0.721094 0 0.570176C 0 0.0632199 0.612932 -0.190665 0.971404 0.167808L 4 3.1964L 7.0286 0.167808Z"/>
+</defs>
+</svg>

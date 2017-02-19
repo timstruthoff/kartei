@@ -1,0 +1,647 @@
+body {
+ padding: 0px;
+ margin: 0px;
+    background-color: #0A0A0A;
+    overflow: hidden;
+    font-family: "Work Sans";
+    color: #fff;
+}
+
+
+html {
+ margin: 0px;
+ padding: 0px;
+}
+
+
+
+::-webkit-scrollbar {
+	width: 6px;
+    padding-right: 5px;
+    padding-left: 8px;
+}
+
+::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	background: transparent;
+        border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: transparent;
+}
+
+
+.scrollbar::-webkit-scrollbar-thumb {
+	background: rgba(255,255,255,0.2);
+        border-radius: 3px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+	background: rgba(255,255,255,0.4);
+}
+
+
+a {
+  color: #68217A;
+}
+
+#app {
+    padding-top: 48px;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+#content {
+    overflow-y: scroll;
+    height: calc(100% - 48px);
+    padding-right: 8px;
+    margin-right: -14px;
+    /*margin-top: 16px;*/
+}
+
+#list {
+    padding-bottom: 16px;
+}
+
+.main {
+    height: 100%;
+}
+
+.titlebar {
+    -webkit-user-select: none;
+    -webkit-app-region: drag;
+    position: absolute;
+    width: 100%;
+    height: 48px;
+}
+
+.titlebar .titlebar-title {
+    height: 36px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    line-height: 36px;
+    font-family: "Segoe UI";
+    -webkit-font-smoothing: subpixel-antialiased;
+    text-rendering: optimizeLegibility;
+    color: #fff;
+    font-size: 12px;
+}
+
+.titlebar .window-controls {
+    position: absolute;
+    right: 0;
+    -webkit-user-select: none;
+    -webkit-app-region: no-drag;
+}
+
+.titlebar .window-controls .control {
+    display: block;
+    cursor: pointer;
+    float: left;
+    
+    width: 16px;
+    height: 16px;
+    margin: 12px 12px;
+    box-sizing: content-box;
+    border: none;
+    background: none;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+
+.titlebar .window-controls .control:active,
+.titlebar .window-controls .control:focus {
+    outline: none;    
+}
+
+/*.titlebar .window-controls .control:hover {
+    background-color: rgba(0,0,0,0.2);    
+}
+
+.titlebar .window-controls .control.close:hover {
+    background-color: rgba(255,0,0,1);
+}*/
+
+.titlebar .window-controls .min svg {
+    width: 100%;
+    height: 100%;
+}
+
+.titlebar .window-controls .max svg {
+    width: 100%;
+    height: 100%;
+}
+
+.titlebar .window-controls .close svg {
+    width: 100%;
+    height: 100%;
+}
+
+/*.titlebar .window-controls .close:hover {
+    color: #f25561
+}*/
+
+
+
+.titlebar .window-controls .control svg path {
+    fill: rgba(255,255,255,0.5);
+    transition: fill 0.2s ease;
+}
+
+.titlebar .window-controls .control:hover svg path {
+    fill: rgba(255,255,255,0.8);
+}
+
+
+/*
+<button reset>
+*/
+
+[role="button"],
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+    -webkit-box-sizing: content-box;
+       -moz-box-sizing: content-box;
+            box-sizing: content-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+/* Reset `button` and button-style `input` default styles */
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+    background: none;
+    border: 0;
+    color: inherit;
+    /* cursor: default; */
+    font: inherit;
+    line-height: normal;
+    overflow: visible;
+    padding: 0;
+    -webkit-appearance: button; /* for input */
+    -webkit-user-select: none; /* for button */
+       -moz-user-select: none;
+        -ms-user-select: none;
+}
+input::-moz-focus-inner,
+button::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/* Make `a` like a button */
+[role="button"] {
+    color: inherit;
+    cursor: default;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    white-space: pre;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+}
+
+/*
+</button reset>
+*/
+
+input {
+	outline: none;
+}
+input[type=search] {
+	-webkit-appearance: textfield;
+	-webkit-box-sizing: content-box;
+	font-family: inherit;
+	/*font-size: 100%;*/
+}
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+	display: none; 
+}
+
+
+
+
+#app {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: flex-start;
+}
+
+.main {
+    order: 0;
+    flex: 1 1 auto;
+    align-self: auto;
+    padding: 0 32px;
+ }
+
+
+/*
+<the panels on the sides>
+*/
+
+.side {
+    height: 100%;
+    width: 48px;
+}
+
+.side.title {
+    display: flex;
+    order: 0;
+    flex: 0 1 auto;
+}
+
+
+
+.side .title {
+    align-self: flex-end;
+    text-align: right;
+    height: 50px;
+    line-height: 16px;
+    font-size: 18px;
+    padding-right: 16px;
+    padding-top: 32px;
+    writing-mode: vertical-lr;
+    color: #B1FDEB;
+    transform: rotate(180deg);
+
+}
+
+
+.side .path {
+    display: inline-block;
+    min-height: 50px;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    padding-bottom: 16px;
+    padding-top: 8px;
+    font-size: 18px;
+    color: #B1FDEB;
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+.side.path .reload {
+    cursor: pointer;
+    display: block;
+    width: 16px;
+    height: 16px;
+    transform: translateX(2px);
+    transition: transform 250ms ease;
+    opacity: 1;
+}
+
+.side.path .reload:active {
+    transform: translateX(2px) scale(0.9);
+    
+}
+
+.side.path .reload.reloading svg {
+    animation-name: spin;
+    animation-duration: 4000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+
+.side.path .reload path {
+    fill: #B1FDEB;
+    /*transition: fill 100ms ease;*/
+}
+
+.side.path .reload:hover path {
+    fill: #fff;
+}
+
+/*
+</the panels on the sides>
+*/
+
+.top-controls {
+    margin-top: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    height: 32px;
+}
+
+.search-input {
+    border: none;
+    float: left;
+    background: url(img/search.svg) no-repeat;
+    background-size: 16px;
+    padding-left: 24px;
+    width: 56px;
+    background-position-y: 1px;
+    line-height: 16px;
+    color: #fff;
+    font-size: 12px;
+    /* transition: all .5s; */
+}
+
+
+input::-webkit-input-placeholder {
+    transition: opacity 200ms;
+    color: #fff;
+    opacity: 0.8;
+}
+
+.search-input:hover::-webkit-input-placeholder,
+.search-input:focus::-webkit-input-placeholder {
+    opacity: 1;
+}
+
+
+/*
+<tags>
+*/
+
+.tags-container {
+    float: right;
+    margin-top: -4px;
+}
+
+.top-controls .tags-container .tag {
+    display: inline-block;
+    font-size: 8px;
+    line-height: 16px;
+    padding: 0px 8px 0px 8px;
+    border: solid 1px #fff;
+    border-radius: 100px;
+    margin-left: 8px;
+    transition: transform, background-color, color 250ms ease;
+}
+
+.top-controls .tags-container .tag:active {
+
+    transform: scale(0.9);
+}
+
+.top-controls .tags-container .tag:hover,
+.top-controls .tags-container .tag.active {
+    display: inline-block;
+    background-color: #fff;
+    color: #000;
+}
+
+/*
+</tags>
+*/
+
+
+/*
+<sort-button>
+*/
+
+
+.top-controls .sort-button {
+    cursor: pointer;
+    float: right;
+    background-size: 16px;
+    background-position-y: 1px;
+    line-height: 16px;
+    color: #fff;
+    font-size: 12px;
+    text-align: left;
+    margin-left: 16px;
+    overflow: hidden;
+    
+}
+
+
+
+.top-controls .sort-button svg {
+    transition: transform 250ms ease;
+}
+
+.top-controls .sort-button:hover svg {
+    transform: translateY(1px);
+}
+
+.top-controls .sort-button * {
+    float: left;
+}
+
+.top-controls .sort-button .container {
+    height: 16px;
+    width: 28px;
+    transition: width 250ms ease;
+}
+
+.top-controls .sort-button .label {
+    position: absolute;
+    z-index: 1;
+    transition: opacity 250ms ease;
+}
+
+.top-controls .sort-button .options {
+    position: absolute;
+    z-index: 0;
+    transition: opacity 250ms ease;
+    opacity: 0;
+    width: 96px;
+}
+
+.top-controls .sort-button.expanded .container {
+    height: 16px;
+    width: 96px;
+}
+
+.top-controls .sort-button .arrow {
+    transform: scaleY(1);
+    transition: transform 250ms ease;
+}
+
+.top-controls .sort-button .arrow.descending {
+    transform: scaleY(1);
+}
+
+.top-controls .sort-button .arrow.ascending {
+    transform: scaleY(-1);
+}
+
+.top-controls .sort-button.expanded .label {
+    z-index: 0;
+    opacity: 0;
+}
+
+.top-controls .sort-button.expanded .options {
+    z-index: 1;
+    opacity: 1;
+}
+
+/*
+</sort-button>
+*/
+
+
+
+/*
+<projects-container>
+*/
+
+.project-container .top-row {
+    display: flex;
+    justify-content: space-between;
+    height: 16px;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -50%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+
+
+.project-container {
+    background-color: #000;
+    border-radius: 4px;
+    animation-name: fadeInDown;
+    animation-duration: 0.5s;
+    animation-delay: 2.5s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-out;
+    padding: 16px;
+}
+
+.project-container:nth-child(0) {
+    animation-delay: 1s;
+}
+
+.project-container:nth-child(1) {
+    animation-delay: 1.15s;
+}
+
+.project-container:nth-child(2) {
+    animation-delay: 1.3s;
+}
+
+.project-container:nth-child(3) {
+    animation-delay: 1.45s;
+}
+
+.project-container:nth-child(4) {
+    animation-delay: 1.6s;
+}
+
+.project-container:nth-child(5) {
+    animation-delay: 1.75s;
+}
+
+.project-container:nth-child(6) {
+    animation-delay: 1.9s;
+}
+
+.project-container:nth-child(7) {
+    animation-delay: 2.05s;
+}
+
+.project-container:nth-child(8) {
+    animation-delay: 2.2s;
+}
+
+.project-container:nth-child(9) {
+    animation-delay: 2.35s;
+}
+
+.project-container:nth-child(10) {
+    animation-delay: 2.5s;
+}
+
+.project-container {
+    margin-top: 16px;
+}
+
+.project-container .name {
+    margin-top: 2px;
+    font-size: 12px;
+}
+
+.project-container .stat {
+    margin-top: 2px;
+    font-size: 12px;
+    float: right;
+
+}
+
+.project-container .bottom-row {
+    display: flex;
+    margin-top: 16px;
+    justify-content: space-between;
+    height: 16px;
+}
+
+.project-container .tags-container {
+    
+}
+
+.project-container .tags-container .tag {
+    display: inline-block;
+    font-size: 8px;
+    line-height: 16px;
+    padding: 0px 8px 0px 8px;
+    border-radius: 100px;
+    background-color: #fff;
+    color: #000;
+    margin-right: 8px;
+}
+
+.project-container .button {
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    margin-left: 16px;
+    opacity: 0.6;
+    transition: opacity, transform 250ms ease;
+}
+
+.project-container .button:hover {
+    opacity: 1;
+}
+
+.project-container .button:active {
+    transform: scale(0.9);
+}
+
+
+.project-container .button.edit {
+    background-image: url(img/edit.svg);
+}
+
+.project-container .button.open {
+    background-image: url(img/open.svg);
+}
+
+/*
+</projects-container>
+*/

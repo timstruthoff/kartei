@@ -1,0 +1,35 @@
+{
+  "name": "project-manager",
+  "version": "0.1.0",
+  "main": "./main.js",
+  "scripts": {
+    "start": "electron .",
+    "package": "electron-packager ./ --all --out /dist --version 1.2.6 --overwrite"
+  },
+  "dependencies": {
+    "fuzzy": "^0.1.1",
+    "get-folder-size": "^1.0.0",
+    "sort-by": "^1.1.1"
+  },
+  "devDependencies": {
+    "electron-packager": "^8.5.1",
+    "electron": "^1.2.6"
+  },
+  "description": "![Sound Machine](https://rawgithub.com/bojzi/sound-machine/master/sketch/sound-machine.png)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timstruthoff/project-manager.git"
+  },
+  "keywords": [
+    "project",
+    "manager",
+    "manage",
+    "projects"
+  ],
+  "author": "Tim Struthoff",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/timstruthoff/project-manager/issues"
+  },
+  "homepage": "https://github.com/timstruthoff/project-manager#readme"
+}

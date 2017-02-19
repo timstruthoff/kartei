@@ -1,0 +1,14 @@
+<svg width="12" height="12" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>copy</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(1314 272)" figma:type="canvas">
+<g id="copy" style="mix-blend-mode:normal;" figma:type="symbol">
+<g id="Vector" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(-1313 -271)" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 8.5 7L 9 7L 9 1L 3 1L 3 1.5L 2 1.5L 2 0L 10 0L 10 8L 8.5 8L 8.5 7ZM 0 10L 8 10L 8 2.01373L 0 2.01373L 0 10ZM 7 3L 7 9L 1 9L 1 3L 7 3Z"/>
+</defs>
+</svg>

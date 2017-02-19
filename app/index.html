@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Projects</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="titlebar">
+        <div class="titlebar-title">Projects</div>
+        <div class="window-controls">
+            <button class="control min" id="min-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                  <path d="M2 14h12v-1H2v1z"/>
+              </svg>
+          </button>
+          <button class="control max" id="max-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+              <path d="M3 13V3h10v10H3zM14 2H2v12h12V2z"/>
+          </svg>
+      </button>
+      <button class="control close" id="close-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+          <path d="M8.75 8l4.5 4.5-.75.75L8 8.75l-4.5 4.5-.75-.75L7.25 8l-4.5-4.5.75-.75L8 7.25l4.5-4.5.75.75L8.75 8z"/>
+      </svg>
+  </button>
+</div>
+</div>
+<div id="app">
+    <div class="side title"><div class="title">Kartei</div></div>
+    <div class="main">
+        <div class="top-controls">
+            <input id="searchInput" class="search-input" type="search" placeholder="Search">
+            <button class="sort-button" id="sortButton">
+                <div class="arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                        <path fill="#fff" d="M11.03 6.5c.357-.36.97-.105.97.402 0 .15-.06.295-.166.402l-3.598 3.598L8 11.14l-.236-.237-3.597-3.598C4.06 7.198 4 7.053 4 6.902c0-.507.613-.76.97-.402L8 9.528 11.03 6.5z"/>
+                    </svg>
+                </div>
+                <div class="container">
+                <div class="label">Abc</div>
+                    <div class="options"><div id="sortAbc">Abc</div><div>&nbsp;·&nbsp;</div><div id="sortSize">Size</div><div>&nbsp;·&nbsp;</div><div id="sortDate">Date</div></div>
+                </div>
+            </button>
+            <div class="tags-container" id="tags">
+                <button class="tag">school</button>
+                <button class="tag">client</button>
+                <button class="tag">personal</button>
+            </div>
+
+        </div>
+
+
+        <div id="content">
+            <div id="list">
+                <div class="project-container">
+                    <div class="top-row">
+                        <div class="name">Project Manager</div>
+                        <div class="stat">40.3 MB&nbsp;&nbsp;·&nbsp;&nbsp;22.11.2016</div>
+                    </div>
+                    <div class="bottom-row">
+                        <div class="tags-container">
+                            <div class="tag">school</div>
+                            <div class="tag">persoanl</div>
+                        </div>
+                        <div>
+                            <button class="button edit"></button>
+                            <button class="button open"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-container">
+                    <div class="top-row">
+                        <div class="name">Project Manager</div>
+                        <div class="stat">40.3 MB&nbsp;&nbsp;·&nbsp;&nbsp;22.11.2016</div>
+                    </div>
+                    <div class="bottom-row">
+                        <div class="tags-container">
+                            <div class="tag">client</div>
+                        </div>
+                        <div>
+                            <button class="button edit"></button>
+                            <button class="button open"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-container">
+                    <div class="top-row">
+                        <div class="name">Project Manager</div>
+                        <div class="stat">40.3 MB&nbsp;&nbsp;·&nbsp;&nbsp;22.11.2016</div>
+                    </div>
+                    <div class="bottom-row">
+                        <div class="tags-container">
+                            <div class="tag">client</div>
+                        </div>
+                        <div>
+                            <button class="button edit"></button>
+                            <button class="button open"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-container">
+                    <div class="top-row">
+                        <div class="name">Project Manager</div>
+                        <div class="stat">40.3 MB&nbsp;&nbsp;·&nbsp;&nbsp;22.11.2016</div>
+                    </div>
+                    <div class="bottom-row">
+                        <div class="tags-container">
+                            <div class="tag">client</div>
+                        </div>
+                        <div>
+                            <button class="button edit"></button>
+                            <button class="button open"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-container">
+                    <div class="top-row">
+                        <div class="name">Project Manager</div>
+                        <div class="date">22.11.2016</div>
+                    </div>
+                    <div class="bottom-row">
+                        <div class="tags-container">
+                            <div class="tag">client</div>
+                        </div>
+                        <div>
+                            <button class="button edit"></button>
+                            <button class="button open"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-container">
+                    <div class="top-row">
+                        <div class="name">Project Manager</div>
+                        <div class="date">22.11.2016</div>
+                    </div>
+                    <div class="bottom-row">
+                        <div class="tags-container">
+                            <div class="tag">client</div>
+                        </div>
+                        <div>
+                            <button class="button edit"></button>
+                            <button class="button open"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-container">
+                    <div class="top-row">
+                        <div class="name">Project Manager</div>
+                        <div class="date">22.11.2016</div>
+                    </div>
+                    <div class="bottom-row">
+                        <div class="tags-container">
+                            <div class="tag">client</div>
+                        </div>
+                        <div>
+                            <button class="button edit"></button>
+                            <button class="button open"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-container">
+                    <div class="top-row">
+                        <div class="name">Project Manager</div>
+                        <div class="date">22.11.2016</div>
+                    </div>
+                    <div class="bottom-row">
+                        <div class="tags-container">
+                            <div class="tag">client</div>
+                        </div>
+                        <div>
+                            <button class="button edit"></button>
+                            <button class="button open"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-container">
+                    <div class="top-row">
+                        <div class="name">Project Manager</div>
+                        <div class="date">22.11.2016</div>
+                    </div>
+                    <div class="bottom-row">
+                        <div class="tags-container">
+                            <div class="tag">client</div>
+                        </div>
+                        <div>
+                            <button class="button edit"></button>
+                            <button class="button open"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="side path">
+
+        <div class="path" contenteditable="true">D:\Data\Dev</div>
+        <button class="reload">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+              <path d="M12 2.798V4H8V3h2.692c-.913-.64-1.985-.984-3.092-.984-3.116 0-5.65 2.71-5.65 6.043 0 .877.172 1.725.51 2.516L1.6 11C1.2 10.074 1 9.085 1 8.06 1 4.166 3.96 1 7.6 1c1.208 0 2.38.352 3.4 1.008V0h1v2.798zM7.777 15C11.76 15 15 12.15 15 8.646c0-.922-.22-1.813-.655-2.646l-.945.38c.37.713.56 1.476.56 2.266 0 3-2.772 5.44-6.183 5.44-1.342 0-2.642-.384-3.708-1.087h2.965v-1h-4v1.376L3 13.412l.035.026V16h1v-1.92c1.12.6 2.414.92 3.742.92z"/>
+          </svg>
+      </button>
+  </div>
+</div>
+</body>
+
+<script src="../render.js"></script>
+
+</html>

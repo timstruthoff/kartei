@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Properties</title>
+    <link rel="stylesheet" href="properties-modal.css">
+</head>
+
+<body>
+    <div class="titlebar">
+        <div class="titlebar-title" id="title">Properties</div>
+        <div class="window-controls">
+
+            <button class="control close" id="close-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                 <path fill="#000" d="M8.75 8l4.5 4.5-.75.75L8 8.75l-4.5 4.5-.75-.75L7.25 8l-4.5-4.5.75-.75L8 7.25l4.5-4.5.75.75L8.75 8z"/>
+             </svg>
+         </button>
+     </div>
+ </div>
+ <div id="app">
+    <div class="row">
+        <div class="title">Stats</div>
+        <div class="content">
+            <div class="property-row">
+                <div class="property-name">Path:</div>
+                <div class="property-value" id="pathProperty">Loading...</div>
+                <div class="property-path-overlay show">
+                    <div class="path" id="pathFullProperty">D:\Data\Dev\project\personal-site</div>
+                    <button class="button" id="pathFullCopy" title="Copy to clipboard."></button>
+                </div>
+            </div>
+
+            <div class="property-row">
+                <div class="property-name">Size: </div>
+                <div class="property-value" id="sizeProperty">Loading...</div>
+            </div>
+
+            <div class="property-row">
+                <div class="property-name">Last modified: </div>
+                <div class="property-value" id="createdTimeProperty">Loading...</div>
+            </div>
+
+            <div class="property-row">
+                <div class="property-name">Created: </div>
+                <div class="property-value" id="modifiedTimeProperty">Loading...</div>
+            </div>              
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="title">Webserver</div>
+        <div class="content">
+            <div class="webserver-container" id="startWebserver">
+                <input class="hostname" type="text" placeholder="Hostname">
+                <button class="start">
+                    <div class="label">Start</div>
+                    <div class="loader">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 50 50">
+                            <path d="M25.25 6.46C14.934 6.46 6.57 14.827 6.57 25.145h4.068c0-8.07 6.543-14.615 14.615-14.615V6.46z">
+                        </svg>
+                </div>
+            </button>
+        </div>      
+
+    </div>
+</div>
+</div>
+
+<script src="properties-modal.js"></script>
+</body>
+
+
+</html>

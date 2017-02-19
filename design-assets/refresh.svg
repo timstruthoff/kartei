@@ -1,0 +1,16 @@
+<svg width="16" height="14" viewBox="0 0 16 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>refresh</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(1218 271)" figma:type="canvas">
+<g id="refresh" style="mix-blend-mode:normal;" figma:type="symbol">
+<g id="Union" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(-1218 -271)" style="mix-blend-mode:normal;"/>
+<use xlink:href="#path1_fill" transform="translate(-1218 -271)" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 13.2023 11L 12 11L 12 7L 13 7L 13 9.6925C 13.6395 8.77875 13.9845 7.70676 13.9845 6.60001C 13.9845 3.48428 11.2734 0.949432 7.94104 0.949432C 7.06262 0.949432 6.21521 1.12195 5.4231 1.4614L 5 0.598755C 5.9259 0.20163 6.91516 0 7.94104 0C 11.833 0 15 2.96106 15 6.60001C 15 7.80768 14.6481 8.98044 13.9921 10L 16 10L 16 11L 13.2023 11Z"/>
+<path id="path1_fill" d="M 1 6.77756C 1 10.7602 3.8501 14 7.35278 14C 8.276 14 9.16675 13.7794 10 13.3448L 9.61877 12.4002C 8.90637 12.7722 8.1438 12.961 7.35278 12.961C 4.35376 12.961 1.91382 10.1871 1.91382 6.77756C 1.91382 5.43503 2.29688 4.13547 3 3.0694L 3 6.035L 4 6.035L 4 2.035L 2.62329 2.035L 2.58838 2L 2.5614 2.035L 0 2.035L 0 3.035L 1.91907 3.035C 1.32129 4.15631 1 5.44849 1 6.77756Z"/>
+</defs>
+</svg>

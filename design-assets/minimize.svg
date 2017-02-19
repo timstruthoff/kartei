@@ -1,0 +1,14 @@
+<svg width="16" height="16" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>minimize</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(1506 272)" figma:type="canvas">
+<g id="minimize" style="mix-blend-mode:normal;" figma:type="symbol">
+<g id="Vector" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="translate(-1504 -259)" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 0 1L 12 1L 12 0L 0 0L 0 1Z"/>
+</defs>
+</svg>
